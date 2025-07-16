@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Undresser</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Website Undresser</h1>
+            <div class="refresh-btn" id="refreshBtn" title="Refresh Information">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="m3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+            </div>
+        </header>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <span>Loading information...</span>
+        </div>
+
+        <div class="content" id="content" style="display: none;">
+            <!-- Website Information -->
+            <section class="info-section">
+                <h2>Website Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>URL:</label>
+                        <span id="currentUrl" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Domain:</label>
+                        <span id="domain" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Protocol:</label>
+                        <span id="protocol" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Port:</label>
+                        <span id="port" class="value"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Server Information -->
+            <section class="info-section">
+                <h2>Server Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Server IP:</label>
+                        <span id="serverIp" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Server Name:</label>
+                        <span id="serverName" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Server Software:</label>
+                        <span id="serverSoftware" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Response Time:</label>
+                        <span id="responseTime" class="value"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Information -->
+            <section class="info-section">
+                <h2>Your Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Your IP:</label>
+                        <span id="userIp" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Computer Name:</label>
+                        <span id="computerName" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Browser:</label>
+                        <span id="browser" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>OS:</label>
+                        <span id="operatingSystem" class="value"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Security Information -->
+            <section class="info-section">
+                <h2>Security Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>SSL Certificate:</label>
+                        <span id="sslStatus" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Certificate Issuer:</label>
+                        <span id="certIssuer" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Certificate Expiry:</label>
+                        <span id="certExpiry" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Security Headers:</label>
+                        <span id="securityHeaders" class="value"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Network Information -->
+            <section class="info-section">
+                <h2>Network Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Connection Type:</label>
+                        <span id="connectionType" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Geolocation:</label>
+                        <span id="geolocation" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>ISP:</label>
+                        <span id="isp" class="value"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>DNS Servers:</label>
+                        <span id="dnsServers" class="value"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="error" id="error" style="display: none;">
+            <p>Failed to load information. Please try refreshing.</p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

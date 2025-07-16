@@ -1,0 +1,38 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="56" fill="url(#bg)"/>
+  
+  <!-- Network icon -->
+  <!-- Center node -->
+  <circle cx="64" cy="64" r="8" fill="white"/>
+  
+  <!-- Connection lines -->
+  <line x1="64" y1="64" x2="88" y2="40" stroke="white" stroke-width="3"/>
+  <line x1="64" y1="64" x2="88" y2="88" stroke="white" stroke-width="3"/>
+  <line x1="64" y1="64" x2="40" y2="88" stroke="white" stroke-width="3"/>
+  <line x1="64" y1="64" x2="40" y2="40" stroke="white" stroke-width="3"/>
+  
+  <!-- Outer nodes -->
+  <circle cx="88" cy="40" r="6" fill="white"/>
+  <circle cx="88" cy="88" r="6" fill="white"/>
+  <circle cx="40" cy="88" r="6" fill="white"/>
+  <circle cx="40" cy="40" r="6" fill="white"/>
+  
+  <!-- Additional connection indicators -->
+  <circle cx="64" cy="32" r="4" fill="white" opacity="0.8"/>
+  <circle cx="96" cy="64" r="4" fill="white" opacity="0.8"/>
+  <circle cx="64" cy="96" r="4" fill="white" opacity="0.8"/>
+  <circle cx="32" cy="64" r="4" fill="white" opacity="0.8"/>
+  
+  <line x1="64" y1="64" x2="64" y2="32" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="64" y1="64" x2="96" y2="64" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="64" y1="64" x2="64" y2="96" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="64" y1="64" x2="32" y2="64" stroke="white" stroke-width="2" opacity="0.6"/>
+</svg>
